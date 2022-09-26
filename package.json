@@ -1,0 +1,35 @@
+{
+  "name": "create-tlist",
+  "version": "0.0.1",
+  "type": "module",
+  "main": "index.js",
+  "bin": {
+    "create-tlist": "index.js",
+    "ctl": "index.js"
+  },
+  "files": [
+    "index.js",
+    "template-*",
+    "dist"
+  ],
+  "scripts": {
+    "dev": "unbuild --stub",
+    "build": "unbuild",
+    "prepublishOnly": "npm run build"
+  },
+  "engines": {
+    "node": "^14.18.0 || >=16.0.0"
+  },
+  "author": "小鑫同学",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/minimist": "^1.2.2",
+    "@types/node": "^18.7.21",
+    "@types/prompts": "^2.0.14",
+    "fs-extra": "^10.1.0",
+    "kolorist": "^1.6.0",
+    "minimist": "^1.2.6",
+    "prompts": "^2.4.2",
+    "unbuild": "^0.8.11"
+  }
+}
